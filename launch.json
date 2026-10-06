@@ -1,0 +1,20 @@
+{
+  "kind": "custom_token",
+  "token": {
+    "contract": "Token",
+    "name": "ID PEPE",
+    "symbol": "PEPE",
+    "decimals": 18,
+    "constructorArgs": [],
+    "totalSupply": "1000000000000000000000000000"
+  },
+  "contracts": [],
+  "pool": {
+    "pairedCurrency": "0xd34a99bc0f67ae1bbd63c660e6d0b0dd03e263b7",
+    "fee": 3000,
+    "tickSpacing": 60,
+    "initialPrice": "137227202865029797602485611"
+  },
+  "economics": {"poolBps":8000,"initialMarketCapWei":"3000000000000000000000","remainderTo":"0x70bcbde387539d95ffe6d43edbf7c6aa2da87a09"},
+  "notes": "Token in src/Token.sol is an ERC-20 named ID PEPE (PEPE) with 18 decimals. Its argument-free constructor mints 1,000,000,000 tokens once to msg.sender. It has no administrative powers, transfer taxes, or external mint function. No application contracts are included. The pool uses the requested paired currency and a 0.3% fee. initialPrice is provenance only: floor(sqrt(initialMarketCapWei / totalSupply) * 2^96), expressed with Token as currency0. The deployer derives the opening price from the supplied economics and totalSupply using the actual currency ordering."
+}
